@@ -123,7 +123,7 @@ class App
     print 'ID of person: '
     id = gets.chomp.to_i
 
-    rental = @rental.filter { |_rental| person = person if person.id == id }
+    rental = @rental.filter { |_rental| rental.person.id == id }
     puts 'Rental:'
     rental.each do |rental|
       puts "Date: #{rental.date}, Book \"#{rental.book.title}\" by #{rental.book.author}"
