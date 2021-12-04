@@ -11,8 +11,9 @@ class App
     @books = []
     @people = []
   end
-# rubocop:disable Metrics/CyclomaticComplexity
-  def main # rubocop:disable Metrics/ClassLength
+
+  # rubocop:disable Metrics/CyclomaticComplexity
+  def main
     app = App.new
     app.main
     reply = nil
