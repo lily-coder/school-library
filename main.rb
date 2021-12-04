@@ -66,20 +66,16 @@ class App
       puts 'Invalid option'
       return
     end
-
     print 'Your Age: '
     age = gets.chomp
-
     print 'Your Name: '
     name = gets.chomp
-
     person =
       case person_type
       when '1'
         print 'Do you have parent permission? [Y/N]: '
         parent_permission = gets.chomp
         parent_permission = parent_permission.downcase == 'y'
-
         Student.new(age, name, parent_permission)
       when '2'
         print 'Specialization: '
