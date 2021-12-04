@@ -12,8 +12,7 @@ class App
     @people = []
   end
 # rubocop:disable Metrics/CyclomaticComplexity
-  def main
-# rubocop:enable Metrics/CyclomaticComplexity
+  def main # rubocop:disable Metrics/ClassLength
     app = App.new
     app.main
     reply = nil
