@@ -15,11 +15,8 @@ class App
   def main
     app = App.new
     app.main
-
     reply = nil
-
     puts "Welcome to our App!\n\n"
-
     while reply != '7'
       puts 'Please choose an option by enterin a number:'
       puts '1 - List all books'
@@ -30,7 +27,6 @@ class App
       puts '6 - List all rentals for a given person id'
       puts '7 - Exit'
       reply = gets.chomp
-
       case reply
       when '1'
         app.list_books
@@ -47,7 +43,6 @@ class App
       when '7'
         puts 'Thank you for using this app!'
       end
-
       puts "\n"
     end
   end

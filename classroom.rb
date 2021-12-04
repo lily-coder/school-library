@@ -11,5 +11,4 @@ class Classroom
         @students << student
         student.classroom = self
     end
-end
   
