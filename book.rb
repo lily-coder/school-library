@@ -10,5 +10,5 @@ class Book
     end
     def include_rental(person, date)
       Rental.new(person, self, date)
-  end
-  
+    end
+end

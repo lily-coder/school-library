@@ -13,6 +13,7 @@ class App
     end
     def main
       app = App.new()
+      app.main()
     
       reply = nil
 
@@ -129,7 +130,7 @@ class App
       print "ID of person: "
       id = gets.chomp.to_i
   
-      rental = @rental.filter {|rental| rental.person.id == id}
+      rental = @rental.filter {|rental| person = person if person.id == id}
       puts "Rental:"
       rental.each do |rental|
         puts "Date: #{rental.date}, Book \"#{rental.book.title}\" by #{rental.book.author}"
