@@ -6,11 +6,11 @@ require './classroom'
 require './student'
 
 class App
-    def initialize
-      @rental = []
-      @books = []
-      @people = []
-    end
+  def initialize
+    @rental = []
+    @books = []
+    @people = []
+  end
     def main
       app = App.new()
       app.main()
